@@ -1,0 +1,23 @@
+{
+  "name": "givexindia",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.16.0"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env backend/src/server.js",
+    "refresh": "node --env-file-if-exists=.env backend/src/jobs.js refresh",
+    "seed": "node --env-file-if-exists=.env backend/src/jobs.js seed",
+    "import-history": "node --env-file-if-exists=.env backend/src/jobs.js import-history"
+  },
+  "dependencies": {
+    "cheerio": "1.1.2",
+    "csv-parse": "6.1.0",
+    "entities": "6.0.1",
+    "esbuild": "0.27.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  }
+}
